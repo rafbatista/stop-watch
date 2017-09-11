@@ -9,18 +9,25 @@ function startSeconds() {
 }
 
 function drawSeconds() {
+  if (seconds > 0) {
   $seconds.textContent = seconds
+  }
 }
 
 var startInterval = null
 var drawInterval = null
+var hasStarted = false
 
 $startButton.addEventListener('click', function() {
-  startInterval = setInterval(drawSeconds, 500)
-  drawInterval = setInterval(startSeconds, 1000)
+  if (!hasStarted) {
+    startInterval = setInterval(drawSeconds, 100)
+    drawInterval = setInterval(startSeconds, 1000)
+    hasStarted = true
+  }
 })
 
 $stopButton.addEventListener('click', function() {
+  hasStarted = false
   clearInterval(startInterval)
   clearInterval(drawInterval)
 })

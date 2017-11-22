@@ -5,4 +5,4 @@ An app used to measure the amount of time elapsed when going from active to inac
 index.html
 
 # Screenshot
-![stopwatch](https://user-images.githubusercontent.com/31448950/33103643-48b1221c-ced8-11e7-859e-1e03e12fda66.gif)
+![stopwatch](https://user-images.githubusercontent.com/31448950/33103693-a5a5c7fc-ced8-11e7-8f6a-545a13d9ea75.gif)
